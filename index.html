@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structures Inc. Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/6b80314e71.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body class="home-page">
+    <nav class="navigation">
+        <div class="logo">
+            <img src="/images/logoFinal.jpg" alt="">
+            Structures Inc.
+        </div>
+        <a href="/index.html" class="selected">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/services.html">Services</a>
+        <a href="/news.html">News</a>
+        <a href="/contact.html">Contact Us</a>
+        <a href="/gallery.html">Gallery</a>
+    </nav>
+    <nav class="nav-phone">
+        <span>
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#ffff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#ffff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#ffff" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul id="side-menu" class="nav-items">
+            <a href="#" class="btn-close" onclick="closeNav()">&times;</a>
+            <li><a href="/index.html" class="selected">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <section class="content-wrapper">
+        <h1>Welcome to the Structures Inc. website!</h1>
+        <p>Finance & Investing Simplified!<br>Here you will find capable professionals to help you plan and take care of all your personal finanse and investing needs!</p>
+        <button>See Our Services
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+    </section>
+    <footer>
+        <ul class="foot-nav">
+            <span class="foot-head">Navigation</span>
+            <li><a href="/index.html" class="selected">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+        <ul class="foot-con">
+            <span class="foot-head">Contact</span>
+            <li><span><i class="fa-solid fa-earth-americas"></i> NY 666 Street 999</span></li>
+            <li><span><i class="fa-solid fa-envelope"></i> pyramid@structures.com</span></li>
+            <li><span><i class="fa-solid fa-phone"></i> +1 839 322 333</span></li>
+        </ul>
+        <ul class="foot-soc">
+            <span class="foot-head">Follow us on social media</span>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structures Inc. Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/6b80314e71.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="services-page">
+    <nav class="navigation">
+        <div class="logo">
+            <img src="/images/logoFinal.jpg" alt="">
+            Structures Inc.
+        </div>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/services.html" class="selected">Services</a>
+        <a href="/news.html">News</a>
+        <a href="/contact.html">Contact Us</a>
+        <a href="/gallery.html">Gallery</a>
+    </nav>
+    <nav class="nav-phone">
+        <span>
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#ffff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#ffff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#ffff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <ul id="side-menu" class="nav-items">
+            <a href="#" class="btn-close" onclick="closeNav()">&times;</a>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html" class="selected">Services</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <section class="content-wrapper">
+        <h1>Our Services</h1>
+        <p>Below you may have a look through our catalog of services <i class="fa-solid fa-book"></i></p>
+        <section class="presentation">
+            <div class="slides-container">
+                <div class="slide show">
+                    <div class="heading">Invest with Us</div>
+                    <hr>
+                    <div class="text-image">
+                        <div>
+                            <div class="text">
+                                You can easily generate passive income by investing in our trust.
+                                You have a huge variety of investments when investing with us.
+                                Rest assured your assets are secure and producing income of up to 50% year on year
+                                by clicking the button bellow!
+                            </div>
+                            <button class="slide-action"><a href="/contact.html">Take your first steps towards financial
+                                    freedom</a></button>
+                        </div>
+                        <img src="/images/smart-investing.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="heading">Get Investing Advice From The Best</div>
+                    <hr>
+                    <div class="text-image">
+                        <div>
+                            <div class="text">
+                                Access our specialists' top investing picks by signing up to our "Informed
+                                Investor Newsletter".
+                                Here you will get all the best stock pics for your portfolio!
+                            </div>
+                            <button class="slide-action"><a href="/contact.html">Take part in our informative Newsletter</a></button>
+                        </div>
+                        <img src="/images/investing-ideas.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="heading">Smart Investing Course</div>
+                    <hr>
+                    <div class="text-image">
+                        <div>
+                            <div class="text">
+                                Take part in our new "Smart Investing Course" where you will learn investing 
+                                fundamentals such as "Value Investing" and mush more!!!
+                            </div>
+                            <button class="slide-action"><a href="/contact.html">Take part in our informative course</a></button>
+                        </div>
+                        <img src="/images/Value-investing.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="screen-controls">
+                    <button id="full-screen" onclick="fullScreenMode()" class="screen-button show"><i
+                            class="fa-solid fa-maximize"></i></button>
+                    <button id="small-screen" onclick="smallScreenMode()" class="screen-button"><i
+                            class="fa-solid fa-minimize"></i></button>
+                </div>
+                <span class="slides-count"><span id="currSlide"></span>/<span id="totalSlides"></span></span>
+                <div class="slide-controls">
+                    <button id="left-slide" class="show" onclick="moveToLeftSlide()"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <button id="right-slide" class="show" onclick="moveToRightSlide()"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <ul class="foot-nav">
+            <span class="foot-head">Navigation</span>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html" class="selected">Services</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+        <ul class="foot-con">
+            <span class="foot-head">Contact</span>
+            <li><span><i class="fa-solid fa-earth-americas"></i> NY 666 Street 999</span></li>
+            <li><span><i class="fa-solid fa-envelope"></i> pyramid@structures.com</span></li>
+            <li><span><i class="fa-solid fa-phone"></i> +1 839 322 333</span></li>
+        </ul>
+        <ul class="foot-soc">
+            <span class="foot-head">Follow us on social media</span>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

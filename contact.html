@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structures Inc. Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/6b80314e71.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="contact-page">
+    <nav class="navigation">
+        <div class="logo">
+            <img src="/images/logoFinal.jpg" alt="">
+            Structures Inc.
+        </div>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/services.html">Services</a>
+        <a href="/news.html">News</a>
+        <a href="/contact.html" class="selected">Contact Us</a>
+        <a href="/gallery.html">Gallery</a>
+    </nav>
+    <nav class="nav-phone">
+        <span>
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#ffff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#ffff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#ffff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <ul id="side-menu" class="nav-items">
+            <a href="#" class="btn-close" onclick="closeNav()">&times;</a>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html" class="selected">Contact Us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <section class="content-wrapper">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form action="contact.html">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul class="foot-nav">
+            <span class="foot-head">Navigation</span>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/news.html">News</a></li>
+            <li><a href="/contact.html" class="selected">Contact Us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+        </ul>
+        <ul class="foot-con">
+            <span class="foot-head">Contact</span>
+            <li><span><i class="fa-solid fa-earth-americas"></i> NY 666 Street 999</span></li>
+            <li><span><i class="fa-solid fa-envelope"></i> pyramid@structures.com</span></li>
+            <li><span><i class="fa-solid fa-phone"></i> +1 839 322 333</span></li>
+        </ul>
+        <ul class="foot-soc">
+            <span class="foot-head">Follow us on social media</span>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
